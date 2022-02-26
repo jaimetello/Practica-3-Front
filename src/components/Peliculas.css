@@ -1,0 +1,72 @@
+#pantalla{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(228, 248, 247);
+    flex-direction: column;
+    overflow-x:hidden;
+}
+/*En el flex solo afect al div donde lo pones. Prevalece siempre el del hijo al del padre*/
+#buscador{
+    display: flex;
+    height: 15%;
+    width: 100%;
+   /* border: 2px solid black;*/
+    justify-content:center;
+    align-items: center;
+
+}
+#buscador input{
+  height: 27%; 
+  width: 20%; 
+  border: 1px solid black;
+}
+
+#buscador button{
+    height: 30%; 
+    width: 5%; 
+    border: 1px solid black;
+    background-color: beige;
+}
+
+#datos{
+    display: flex;
+    height: 85%;
+    width: 100%;
+    flex-direction: row;
+    border-top: 2px solid black;
+   
+}
+
+#mostrar{
+    height: 100%;
+    width: 70%;
+  
+   /* border: 2px solid blueviolet;*/
+}
+
+#mostrar div{
+    margin-top: 5%;
+    font-size: large;
+}
+
+#lista{
+    display: flex;
+    height: 100%;
+    width: 30%;
+    border-right: 2px solid black;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+#lista div{
+    width: fit-content;
+    margin-top: 5%;
+}
+
+#lista div:hover{
+    border-bottom: 1px solid blue;
+    color: blue;
+    cursor: pointer;
+}
